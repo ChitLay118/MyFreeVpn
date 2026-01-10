@@ -1,8 +1,20 @@
 {
   "app_version": "1.1",
-  "update_url": "https://github.com/yourname/app/raw/main/myvpn.apk",
+  "update_url": "https://github.com/waiyan/app/raw/main/myvpn.apk",
   "servers": [
-    { "name": "Singapore SSH", "ip": "128.1.1.1", "type": "SSH" },
-    { "name": "USA V2Ray", "config": "vmess://...", "type": "V2RAY" }
+    {
+      "name": "Singapore SSH (High Speed)",
+      "type": "SSH",
+      "host": "128.1.1.5",
+      "port": 22,
+      "username": "vpn_user",
+      "password": "my_password123"
+    },
+    {
+      "name": "Japan V2Ray",
+      "type": "V2RAY",
+      "host": "139.5.5.2",
+      "config": "vmess://eyJhZGQiOiIxMzkuNS41LjIiLCJhaWQiOiIwIiwiaG9zdCI6IiIsImlkIjoiY2NjYy1kZGRkLWVlZWUtZmZmZiIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJwb3J0IjoiNDQzIiwicHMiOiJKYXBhbiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6IjIifQ=="
+    }
   ]
 }
