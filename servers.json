@@ -1,32 +1,8 @@
 {
-"servers": [
-{
-"type": "ssh",
-"name": "Singapore SSH 01",
-"host": "sg1.hostssh.com",
-"port": 443,
-"username": "freevpn",
-"password": "12345"
-},
-{
-"type": "openvpn",
-"name": "Japan OpenVPN 01",
-"config_url": "https://raw.githubusercontent.com/ChitLay118/FreeVpnPro/main/ovpn/jp1.ovpn"
-},
-{
-"type": "openvpn",
-"name": "Singapore OpenVPN 01",
-"config_url": "https://raw.githubusercontent.com/ChitLay118/FreeVpnPro/main/ovpn/sg1.ovpn"
-},
-{
-"type": "v2ray",
-"name": "Vmess US 01",
-"link": "vmess://xxxxxxxxxxxxxxxx"
-},
-{
-"type": "dns",
-"name": "Cloudflare WARP DNS",
-"doh": "https://cloudflare-dns.com/dns-query"
-}
-]
+  "app_version": "1.1",
+  "update_url": "https://github.com/yourname/app/raw/main/myvpn.apk",
+  "servers": [
+    { "name": "Singapore SSH", "ip": "128.1.1.1", "type": "SSH" },
+    { "name": "USA V2Ray", "config": "vmess://...", "type": "V2RAY" }
+  ]
 }
