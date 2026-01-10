@@ -9,7 +9,7 @@
       "port": 22,
       "username": "vpn_user",
       "password": "my_password123"
-    },
+    ,
     "name": "Thailand SSH (High Speed)",
       "type": "SSH",
       "host": "185.78.165.153",
