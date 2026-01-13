@@ -1,28 +1,26 @@
-{
-  "app_version": "1.1",
-  "update_url": "https://github.com/waiyan/app/raw/main/myvpn.apk",
-  "servers": [
-    {
-      "name": "Singapore SSH (High Speed)",
-      "type": "SSH",
-      "host": "128.1.1.5",
-      "port": 22,
-      "username": "vpn_user",
-      "password": "my_password123"
-    },
-    {
-    "name": "Thailand SSH (High Speed)",
-      "type": "SSH",
-      "host": "185.78.165.153",
-      "port": 22,
-      "username": "wai118234",
-      "password": "wai118234"
-    },
-    {
-      "name": "Japan V2Ray",
-      "type": "V2RAY",
-      "host": "139.5.5.2",
-      "config": "vmess://eyJhZGQiOiIxMzkuNS41LjIiLCJhaWQiOiIwIiwiaG9zdCI6IiIsImlkIjoiY2NjYy1kZGRkLWVlZWUtZmZmZiIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJwb3J0IjoiNDQzIiwicHMiOiJKYXBhbiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiIiwidiI6IjIifQ=="
-    }
-  ]
-}
+[
+  {
+    "name": "Singapore OpenVPN",
+    "flag": "sg",
+    "type": "ovpn",
+    "config": "YOUR_OVPN_CONFIG_HERE"
+  },
+  {
+    "name": "Japan Shadowsocks",
+    "flag": "jp",
+    "type": "ss",
+    "config": "ss://METHOD:PASSWORD@IP:PORT"
+  },
+  {
+    "name": "US V2Ray",
+    "flag": "us",
+    "type": "v2ray",
+    "config": "vmess://YOUR_VMESS_LINK"
+  },
+  {
+    "name": "MM SSH Tunnel",
+    "flag": "mm",
+    "type": "ssh",
+    "config": "IP|USER|PASS"
+  }
+]
