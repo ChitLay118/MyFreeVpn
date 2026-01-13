@@ -10,8 +10,17 @@
     "flag": "jp",
     "type": "ss",
     "config": "ss://METHOD:PASSWORD@IP:PORT"
-  },
-  {
+  },{
+    "name": "SG-Shadowsocks (TLS 443)",
+    "flag": "sg",
+    "type": "ss",
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNzpzaGFkb3dzb2Nrc2lwU0dORVdAWioqbU5AITI2NnIuRjchZWbi5jb26NDQz#SG2-sock.tcpvpn.com"
+  },{
+    "name": "SG-Shadowsocks (TLS 8445)",
+    "flag": "sg",
+    "type": "ss",
+    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNzpzaGFkb3dzb2Nrc2lwU0dORVdAWioqbU5AITI2NnIuRjchZWbi5jb26ODQ0NQ==#SG2-sock.tcpvpn.com"
+  },{
     "name": "US V2Ray",
     "flag": "us",
     "type": "v2ray",
