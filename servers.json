@@ -1,6 +1,6 @@
 {
   "app_update": {
-    "latest_version": "1.0.2",
+    "latest_version": "1.0.0",
     "update_url": "https://github.com/ChitLay118/MyFreeVpn/raw/main/app-release.apk",
     "release_notes": "Added SSH Tunnel and OpenVPN support, fixed bugs.",
     "force_update": false
