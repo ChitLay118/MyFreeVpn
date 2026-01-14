@@ -1,35 +1,44 @@
-[
-  {
-    "name": "Singapore OpenVPN",
-    "flag": "sg",
-    "type": "ovpn",
-    "config": "YOUR_OVPN_CONFIG_HERE"
+{
+  "app_update": {
+    "latest_version": "1.0.2",
+    "update_url": "https://github.com/ChitLay118/MyFreeVpn/raw/main/app-release.apk",
+    "release_notes": "Added SSH Tunnel and OpenVPN support, fixed bugs.",
+    "force_update": false
   },
-  {
-    "name": "Japan Shadowsocks",
-    "flag": "jp",
-    "type": "ss",
-    "config": "ss://METHOD:PASSWORD@IP:PORT"
-  },{
-    "name": "SG-Shadowsocks (TLS 443)",
-    "flag": "sg",
-    "type": "ss",
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNzpzaGFkb3dzb2Nrc2lwU0dORVdAWioqbU5AITI2NnIuRjchZWbi5jb26NDQz#SG2-sock.tcpvpn.com"
-  },{
-    "name": "SG-Shadowsocks (TLS 8445)",
-    "flag": "sg",
-    "type": "ss",
-    "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNzpzaGFkb3dzb2Nrc2lwU0dORVdAWioqbU5AITI2NnIuRjchZWbi5jb26ODQ0NQ==#SG2-sock.tcpvpn.com"
-  },{
-    "name": "US V2Ray",
-    "flag": "us",
-    "type": "v2ray",
-    "config": "vmess://YOUR_VMESS_LINK"
-  },
-  {
-    "name": "MM SSH Tunnel",
-    "flag": "mm",
-    "type": "ssh",
-    "config": "IP|USER|PASS"
-  }
-]
+  "vpn_servers": [
+    {
+      "name": "Singapore Premium SSH",
+      "country": "Singapore",
+      "flag": "🇸🇬",
+      "protocol": "SSH",
+      "config": {
+        "host": "sg1.sshserver.com",
+        "port": 22,
+        "user": "chitlay",
+        "pass": "123456",
+        "udp_gw": "7300"
+      }
+    },
+    {
+      "name": "Japan Tokyo Vmess",
+      "country": "Japan",
+      "flag": "🇯🇵",
+      "protocol": "V2RAY",
+      "config": "vmess://eyJhZGQiOiIxLjIuMy40IiwicG9ydCI6NDQzLCJpZCI6InV1aWQtaGVyZSIsImFpZCI6MCwicHNzIjoiSlAtU2VydmVyIn0="
+    },
+    {
+      "name": "US High Speed SS",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "protocol": "SHADOWSOCKS",
+      "config": "ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwYXNzd29yZEAxLjIuMy40OjgzODg=#US-Server"
+    },
+    {
+      "name": "Germany OpenVPN",
+      "country": "Germany",
+      "flag": "🇩🇪",
+      "protocol": "OPENVPN",
+      "config": "client\ndev tun\nproto udp\nremote 1.2.3.4 1194\nresolv-retry infinite\nnobind\n..."
+    }
+  ]
+}
